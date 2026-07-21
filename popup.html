@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secure Vault</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <div class="logo-section">
+        <div class="shield-icon">🛡️</div>
+        <div>
+          <h1>Secure Vault</h1>
+          <span class="tagline">Enterprise Security</span>
+        </div>
+      </div>
+      <div class="status-badge">
+        <span class="dot active"></span>
+        Protected
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="stats-grid">
+      <div class="stat-card">
+        <span class="stat-icon">🔒</span>
+        <div>
+          <div class="stat-number" id="sessions">0</div>
+          <div class="stat-label">Secure Sessions</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">📊</span>
+        <div>
+          <div class="stat-number" id="lastUpdate">-</div>
+          <div class="stat-label">Last Sync</div>
+        </div>
+      </div>
+      <div class="stat-card">
+        <span class="stat-icon">🛡️</span>
+        <div>
+          <div class="stat-number" id="threats">0</div>
+          <div class="stat-label">Threats Blocked</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Status -->
+    <div class="security-section">
+      <div class="security-card">
+        <div class="security-header">
+          <span class="security-icon">✅</span>
+          <span class="security-title">Security Status</span>
+        </div>
+        <div class="security-status" id="securityStatus">
+          <span class="status-text">All systems protected</span>
+          <span class="status-time" id="statusTime">Last check: Just now</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="action-grid">
+      <button class="action-btn primary" id="scanBtn">
+        <span>🔄</span> Scan Now
+      </button>
+      <button class="action-btn secondary" id="reportBtn">
+        <span>📋</span> View Report
+      </button>
+      <button class="action-btn secondary" id="settingsBtn">
+        <span>⚙️</span> Settings
+      </button>
+    </div>
+
+    <!-- Privacy Section -->
+    <div class="privacy-section">
+      <div class="privacy-item">
+        <span class="privacy-icon">🔐</span>
+        <div>
+          <div class="privacy-title">End-to-End Encryption</div>
+          <div class="privacy-desc">All data encrypted locally</div>
+        </div>
+      </div>
+      <div class="privacy-item">
+        <span class="privacy-icon">👁️</span>
+        <div>
+          <div class="privacy-title">Zero-Knowledge</div>
+          <div class="privacy-desc">We never see your data</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <div class="footer-text">
+        <span>🔐 Protected by ENTHEM</span>
+        <span class="divider">•</span>
+        <span>v1.0</span>
+      </div>
+      <div class="developer">
+        <span>⚡ Nitish Sharma</span>
+      </div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
